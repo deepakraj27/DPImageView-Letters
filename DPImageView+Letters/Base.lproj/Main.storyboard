@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--InitialsVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="InitialsVC" customModule="DPImageView_Letters" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D5O-AH-c00">
+                                <rect key="frame" x="163" y="369.5" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="EdB-JJ-8ra"/>
+                                    <constraint firstAttribute="width" constant="48" id="RZi-SP-hjA"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Text here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IR9-wO-GFK">
+                                <rect key="frame" x="20" y="250.5" width="335" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="wrv-GK-h6a"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Q6-iq-tkO">
+                                <rect key="frame" x="107" y="309.5" width="160" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="56R-4b-ytF"/>
+                                    <constraint firstAttribute="width" constant="160" id="KB0-02-ovd"/>
+                                </constraints>
+                                <state key="normal" title="Form Initials">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="formInitialAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ph0-hK-32e"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FhR-SS-8qf">
+                                <rect key="frame" x="20" y="289.5" width="335" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Fwz-tC-F4I"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="FhR-SS-8qf" firstAttribute="leading" secondItem="IR9-wO-GFK" secondAttribute="leading" id="3Sc-Sc-uO2"/>
+                            <constraint firstItem="FhR-SS-8qf" firstAttribute="trailing" secondItem="IR9-wO-GFK" secondAttribute="trailing" id="9tO-R8-nrU"/>
+                            <constraint firstItem="D5O-AH-c00" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GcA-ye-Cqf"/>
+                            <constraint firstItem="D5O-AH-c00" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="60" id="IiH-eI-PRg"/>
+                            <constraint firstItem="FhR-SS-8qf" firstAttribute="top" secondItem="IR9-wO-GFK" secondAttribute="bottom" constant="4" id="Yhi-WX-A5z"/>
+                            <constraint firstItem="2Q6-iq-tkO" firstAttribute="top" secondItem="FhR-SS-8qf" secondAttribute="bottom" constant="19" id="fGb-YW-BUW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IR9-wO-GFK" secondAttribute="trailing" constant="20" id="ksR-Fv-5UH"/>
+                            <constraint firstItem="D5O-AH-c00" firstAttribute="top" secondItem="2Q6-iq-tkO" secondAttribute="bottom" constant="20" id="lwH-QU-CoU"/>
+                            <constraint firstItem="2Q6-iq-tkO" firstAttribute="centerX" secondItem="IR9-wO-GFK" secondAttribute="centerX" id="o90-qx-CmD"/>
+                            <constraint firstItem="IR9-wO-GFK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zsR-JT-qz7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="formInitialsButtonOutlet" destination="2Q6-iq-tkO" id="olw-wE-zBM"/>
+                        <outlet property="initialsImageView" destination="D5O-AH-c00" id="WgV-AP-1ft"/>
+                        <outlet property="initialsTextField" destination="IR9-wO-GFK" id="CKZ-Ug-DKt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
