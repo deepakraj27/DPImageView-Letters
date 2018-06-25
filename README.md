@@ -5,7 +5,7 @@ An easy, helpful UIImageView category that generates letter initials as a placeh
 Completely supports SWIFT 4 and SWIFT 3, written excusively for you.
 
 Inspired by https://github.com/bachonk/UIImageView-Letters
-Without Circular View and Border|With Circular View and Border
+Without Circular View and Border            |  With Circular View and Border
 :-------------------------:|:-------------------------:
 ![](https://github.com/deepakraj27/DPImageView-Letters/blob/master/ScreenShots/nonCircular.png)  |  ![](https://github.com/deepakraj27/DPImageView-Letters/blob/master/ScreenShots/circular.png)
 
