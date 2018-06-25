@@ -1,6 +1,6 @@
 # DPImageView-Letters
 
-An easy, helpful UIImageView category that generates letter initials as a placeholder for user images, with a custom background color and double border with custom stroke width
+An easy, helpful UIImageView extension that generates letter initials as a placeholder for user images, with a custom background color and double border with custom stroke width
 
 Completely supports SWIFT 4 and SWIFT 3, written excusively for you.
 
@@ -14,7 +14,7 @@ Without Circular View and Border            |  With Circular View and Border
 
 ### Manual Installation
 
-1. Drag and Drop the `DPImageView-letters.swift` file to your project. 
+1. Drag and Drop the `DPImageView-letters.swift` file from `DPImageView-Letters-Header` Folder to your project. 
 2. Thats it! Enjoy!
 
 ### Usage
