@@ -14,7 +14,7 @@ Without Circular View and Border            |  With Circular View and Border
 
 ### Manual Installation
 
-1. Drag and Drop the `DPImageView-letters.swift` file to your project. 
+1. Drag and Drop the `DPImageView-letters.swift` file from `DPImageView-Letters-Header` Folder to your project. 
 2. Thats it! Enjoy!
 
 ### Usage
