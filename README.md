@@ -6,6 +6,7 @@ Completely supports SWIFT 4 and SWIFT 3, written excusively for you.
 
 Inspired by https://github.com/bachonk/UIImageView-Letters
 
+### ScreenShots
 
 Without Circular View and Border            |  With Circular View and Border
 :-------------------------:|:-------------------------:
