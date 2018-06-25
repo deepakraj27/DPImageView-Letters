@@ -1,6 +1,6 @@
 //
-//  UIImageView+Letters.swift
-//  UIImageViewLettersDemo
+//  DPImageView+LettersExtension.swift
+//  DPUIImageViewLettersDemo
 //
 //  Created by Deepakraj Murugesan on 23/02/18.
 //  Copyright © 2018 Deepak. All rights reserved.
