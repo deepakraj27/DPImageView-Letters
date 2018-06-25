@@ -19,7 +19,8 @@ class InitialsVC: UIViewController {
     //MARK: - VIEW CONTROLLER LIFE CYCLE
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        formInitialsButtonOutlet.layer.cornerRadius = 5
+        formInitialsButtonOutlet.layer.masksToBounds = true
         // Do any additional setup after loading the view.
     }
 
@@ -58,6 +59,14 @@ extension InitialsVC: UITextFieldDelegate{
         return true
     }
     
+    fileprivate func resetEntireSubview() {
+        initialsImageView.image = nil
+        circularSwitch.isOn = false
+        isCircularWithStroke = false
+        formInitialsButtonOutlet.backgroundColor = UIColor(red:0.46, green:0.51, blue:0.55, alpha:0.3)
+        formInitialsButtonOutlet.isUserInteractionEnabled = false
+    }
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let currentCharacterCount = textField.text?.characters.count ?? 0
         if (range.length + range.location > currentCharacterCount){
@@ -70,9 +79,7 @@ extension InitialsVC: UITextFieldDelegate{
             formInitialsButtonOutlet.backgroundColor = UIColor(red:0.18, green:0.49, blue:0.82, alpha:1.0)
             formInitialsButtonOutlet.isUserInteractionEnabled = true
         }else{
-            initialsImageView.image = nil
-            formInitialsButtonOutlet.backgroundColor = UIColor(red:0.46, green:0.51, blue:0.55, alpha:0.3)
-            formInitialsButtonOutlet.isUserInteractionEnabled = false
+            resetEntireSubview()
         }
         return newLength <= 25 // To just allow up to 25 characters
     }

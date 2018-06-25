@@ -281,6 +281,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J494G3U7D8;
 				INFOPLIST_FILE = "DPImageView+Letters/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.deepak.DPImageView-Letters";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -296,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J494G3U7D8;
 				INFOPLIST_FILE = "DPImageView+Letters/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.deepak.DPImageView-Letters";
 				PRODUCT_NAME = "$(TARGET_NAME)";
