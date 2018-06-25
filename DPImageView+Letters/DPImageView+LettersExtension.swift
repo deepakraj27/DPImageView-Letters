@@ -62,7 +62,7 @@ extension UIImageView {
         context?.fill(CGRect(x: 0, y: 0, width: size.width, height: size.height))
         
         let attributes = textAttributes ?? [NSAttributedStringKey.foregroundColor: UIColor.white,
-                                            NSAttributedStringKey.font: UIFont.systemFont(ofSize: 15.0)]
+                                            NSAttributedStringKey.font: UIFont.systemFont(ofSize: 55.0)]
 
         
         //stroke color
@@ -84,7 +84,6 @@ extension UIImageView {
         
         // Text
         if let text = text {
-            
             let textSize = text.size(withAttributes: attributes)
             let bounds = self.bounds
             let rect = CGRect(x: bounds.size.width/2 - textSize.width/2, y: bounds.size.height/2 - textSize.height/2, width: textSize.width, height: textSize.height)
@@ -201,9 +200,9 @@ extension String {
             }
         }
         
-        if firstChar.isEmpty || secondChar.isEmpty {
-            firstChar = "N"
-            secondChar = "B"
+        if firstChar.isEmpty && secondChar.isEmpty {
+            firstChar = "D"
+            secondChar = "P"
         }
         
         return firstChar + secondChar
